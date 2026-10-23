@@ -13,11 +13,6 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="hero container">
-          <div className="tag">
-            <span className="tag-dot" aria-hidden="true" />
-            Agenție imobiliară · Inside Global Group
-          </div>
-
           <div className="hero-row">
             <h1 className="h1">
               <span className="muted">Găsește</span> casa

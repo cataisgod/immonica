@@ -1,14 +1,10 @@
-// Fotografiile sunt placeholdere demo de pe Unsplash (licență gratuită).
-// Se înlocuiesc cu pozele agenției înainte de lansare.
-const unsplash = (id: string, w: number) =>
-  `https://images.unsplash.com/photo-${id}?fm=jpg&q=70&w=${w}&auto=format&fit=crop`;
-
+// Fotografii din proiectele Inside Global Group (inside-group.md, archinvest.md).
 export const images = {
-  hero1: { src: unsplash("1762344687143-e04778bc6316", 1800), alt: "Fațada unei clădiri rezidențiale", credit: "Zulfugar Karimov" },
-  hero2: { src: unsplash("1783685158043-c18472c7f16e", 1200), alt: "Detaliu de intrare", credit: "Alexander Kaufmann" },
-  hero3: { src: unsplash("1774770256885-fdd28b498454", 1200), alt: "Detaliu de arhitectură", credit: "Fabian Kleiser" },
-  property: { src: unsplash("1613977257363-707ba9348227", 2000), alt: "Vilă modernă", credit: "John Fornander" },
-  banner: { src: unsplash("1748679979638-e02b2df71540", 2400), alt: "Interior luminos", credit: "The Prototype" },
+  hero1: { src: "/images/hero-fatada-conac.jpg", alt: "Fațada unui conac restaurat" },
+  hero2: { src: "/images/hero-interior.jpg", alt: "Interior luminos cu ferestre înalte" },
+  hero3: { src: "/images/hero-detaliu-fatada.jpg", alt: "Detaliu de fațadă cu fereastră și plante" },
+  property: { src: "/images/vila-piscina.jpg", alt: "Vilă cu piscină și grădină" },
+  banner: { src: "/images/banner-living.jpg", alt: "Living amenajat cu finisaje din beton ciré" },
 };
 
 export const propertyTypes = [
@@ -30,4 +26,10 @@ export const socials = [
   { label: "YouTube", href: "#" },
 ];
 
-export const contactHref = "mailto:contact@immonica.ro";
+export const contact = {
+  email: "info@immonica.md",
+  phone: "+373 68 898 998",
+  phoneHref: "tel:+37368898998",
+};
+
+export const contactHref = `mailto:${contact.email}`;

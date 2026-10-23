@@ -697,3 +697,29 @@
     padding: 20px;
   }
 }
+
+/* ── Catalog gol ──────────────────────────────────────── */
+.soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(28px, 3vw, 40px);
+  padding-top: clamp(88px, 11vw, 168px);
+  padding-bottom: clamp(96px, 12vw, 180px);
+}
+.soon-title {
+  max-width: 1200px;
+}
+.soon-lead {
+  max-width: 420px;
+}
+.soon-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.soon-actions .pill-btn:first-child {
+  text-transform: none;
+}

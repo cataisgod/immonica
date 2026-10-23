@@ -18,7 +18,7 @@ npm run build && npm run start
 | Servicii, linkuri sociale, linkul de contact, imagini | `lib/content.ts` |
 | Structura paginii (secțiuni) | `app/page.tsx` |
 | Culori, tipografie, layout, responsive | `app/globals.css` |
-| **Proprietăți (date demo), agenți, categorii** | `lib/properties.ts` |
+| Proprietăți, agenți, categorii | `lib/properties.ts` |
 | Catalogul `/proprietati` (categorii, filtre, sortare) | `components/PropertyBrowser.tsx` |
 | Pagina unei proprietăți `/proprietati/[slug]` | `app/proprietati/[slug]/page.tsx` |
 | Stilurile catalogului și ale paginii proprietății | `app/catalog.css` |
@@ -26,13 +26,14 @@ npm run build && npm run start
 | Insigna rotativă din hero | `components/Badge.tsx` |
 | Logo | `public/immonica-logo.svg` |
 
-## Înainte de lansare
+## Conținut
 
-- Fotografiile sunt placeholdere demo de pe Unsplash. Înlocuiește-le cu pozele agenției
-  (le poți pune în `public/` și schimba `src` în `lib/content.ts`).
-- Linkurile sociale (`#`) și `mailto:contact@immonica.ro` sunt provizorii.
-- Cele 15 proprietăți din `lib/properties.ts` sunt demo (adrese, prețuri, agenți inventați).
-  Pentru o proprietate nouă se adaugă un obiect în lista `properties`; pagina ei se generează
-  automat. Butoanele „Programează o vizionare”, „Oferă prețul tău” și „Solicită credit” deschid
-  deocamdată un e-mail către agent.
-- Rata de ipotecă afișată e estimativă: avans 30%, 20 de ani, dobândă 7,8% / an (`mortgage()`).
+- Fotografiile din `public/images/` sunt din proiectele Inside Global Group
+  (inside-group.md, archinvest.md).
+- Contactul (info@immonica.md, +373 68 898 998) e definit o singură dată, în `lib/content.ts` → `contact`.
+- Linkurile sociale din footer (`#`) sunt încă provizorii.
+- **Catalogul de proprietăți e gol** (`properties = []` în `lib/properties.ts`), așa că `/proprietati`
+  afișează „Proprietăți noi vor fi adăugate în cel mai scurt timp!”. Când adaugi primul obiect în
+  listă, apar automat filtrele, cardurile și pagina proprietății. Un exemplu complet de proprietate
+  e în commit-ul `30749a2`.
+- Rata de ipotecă afișată pe proprietăți e estimativă: avans 30%, 20 de ani, dobândă 7,8% / an (`mortgage()`).
